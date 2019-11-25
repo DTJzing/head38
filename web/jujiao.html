@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聚焦失焦</title>
+</head>
+<body>
+<script>
+    function _onfocus() {
+        var _input = document.getElementsByName("focus");
+        _input[0].value = "";
+    }
+    function _onblur() {
+        var _input = document.getElementsByName("focus");
+        _input[0].value = "失去焦点了";
+    }
+</script>
+用户名：<input name="focus" type="text" value="请输入你的姓名" onfocus="_onfocus()" onblur="_onblur()">
+</body>
+</html>

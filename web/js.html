@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+    function _prompt() {
+        var a = prompt("请输入内容：");
+        document.getElementById("b").innerText = a;
+        //alert(_prompt)
+    }
+    function _alert() {
+        var _alert = alert("你是谁？");
+        //document.getElementById(_prompt).innerText = _prompt
+        alert(_alert);
+    }
+    function _confirm() {
+        var _confirm = confirm("要退出吗？");
+        //document.getElementById(_prompt).innerText = _prompt
+        alert(_confirm);
+    }
+</script>
+<input name="prompt" type="button" value="prompt" onclick="_prompt()">
+<input name="alert" type="button" value="alert" onclick="_alert()">
+<input name="confirm" type="button" value="confirm" onclick="_confirm()">
+<p id="b" style="color: red"></p>
+</body>
+</html>

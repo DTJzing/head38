@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单双击</title>
+</head>
+<body>
+<script>
+    function s_click() {
+        var _input = document.getElementById("click")
+        _input.innerText = "我是单击事件"
+    }
+    function d_click() {
+        var _input = document.getElementById("click")
+        _input.innerText = "我是双击事件"
+    }
+</script>
+<input name="click" type="button" value="点击" onclick="s_click()" ondblclick="d_click()">
+<p id="click"></p>
+</body>
+</html>
